@@ -1,6 +1,14 @@
 {
+<<<<<<< Updated upstream
 	"minMuleVersion": "4.4.0",
 	"secureProperties": [
 		
 	]
 }
+=======
+  "minMuleVersion": "4.9.0",
+  "javaSpecificationVersions": [
+    "17"
+  ]
+}
+>>>>>>> Stashed changes

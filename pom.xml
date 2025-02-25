@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< Updated upstream
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	
@@ -8,13 +9,29 @@
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
 	<name>p-b-rb-blackline-journel-extract-api</name>
+=======
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.mycompany</groupId>
+	<artifactId>testcurie</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>mule-application</packaging>
+
+	<name>testcurie</name>
+>>>>>>> Stashed changes
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
+<<<<<<< Updated upstream
 		<app.runtime>4.4.0</app.runtime>
 		<mule.maven.plugin.version>4.2.0</mule.maven.plugin.version>
+=======
+		<app.runtime>4.9.0</app.runtime>
+		<mule.maven.plugin.version>4.3.0</mule.maven.plugin.version>
+>>>>>>> Stashed changes
 	</properties>
 
 	<build>
@@ -22,16 +39,23 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-clean-plugin</artifactId>
+<<<<<<< Updated upstream
 				<version>3.0.0</version>
+=======
+				<version>3.2.0</version>
+>>>>>>> Stashed changes
 			</plugin>
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
+<<<<<<< Updated upstream
 				<configuration>					
 					<classifier>mule-application</classifier>
 				</configuration>
+=======
+>>>>>>> Stashed changes
 			</plugin>
 		</plugins>
 	</build>
@@ -40,16 +64,21 @@
 		<dependency>
 			<groupId>org.mule.connectors</groupId>
 			<artifactId>mule-http-connector</artifactId>
+<<<<<<< Updated upstream
 			<classifier>mule-plugin</classifier>
 		</dependency>
 		<dependency>
 			<groupId>com.whishworks</groupId>
 			<artifactId>common-logger-4m4</artifactId>
+=======
+			<version>1.10.3</version>
+>>>>>>> Stashed changes
 			<classifier>mule-plugin</classifier>
 		</dependency>
 		<dependency>
 			<groupId>org.mule.connectors</groupId>
 			<artifactId>mule-sockets-connector</artifactId>
+<<<<<<< Updated upstream
 			<classifier>mule-plugin</classifier>
 		</dependency>
 		<dependency>
@@ -104,13 +133,24 @@
 			<classifier>mule-domain</classifier>
 			<scope>provided</scope>
 		</dependency>
+=======
+			<version>1.2.5</version>
+			<classifier>mule-plugin</classifier>
+		</dependency>
+>>>>>>> Stashed changes
 	</dependencies>
 
 	<repositories>
 		<repository>
+<<<<<<< Updated upstream
 			<id>anypoint-exchange-v2</id>
 			<name>Anypoint Exchange</name>
 			<url>https://maven.anypoint.mulesoft.com/api/v2/maven</url>
+=======
+			<id>anypoint-exchange-v3</id>
+			<name>Anypoint Exchange</name>
+			<url>https://maven.anypoint.mulesoft.com/api/v3/maven</url>
+>>>>>>> Stashed changes
 			<layout>default</layout>
 		</repository>
 		<repository>
@@ -119,6 +159,7 @@
 			<url>https://repository.mulesoft.org/releases/</url>
 			<layout>default</layout>
 		</repository>
+<<<<<<< Updated upstream
 		<repository>
 			<id>anypoint-exchange-v3</id>
 			<name>Anypoint Exchange V3</name>
@@ -130,6 +171,14 @@
 		<pluginRepository>
 			<id>mulesoft-releases</id>
 			<name>mulesoft release repository</name>
+=======
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>mulesoft-releases</id>
+			<name>MuleSoft Releases Repository</name>
+>>>>>>> Stashed changes
 			<layout>default</layout>
 			<url>https://repository.mulesoft.org/releases/</url>
 			<snapshots>
